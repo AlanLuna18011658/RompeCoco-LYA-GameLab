@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/rompecoco.ico">
+    <!--Archivo CSS para el color de fondo y texto-->
+    <link rel="stylesheet" href="index.css">
+    <title>RompeCoco Online</title>
+    <!--Importamos el archivo CSS que ofrece Jquery-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <!--Atributos CSS para las fichas Drag and Drop-->
+    <style>
+        ul { list-style-type: none; margin: 10; padding: 20; margin-bottom: 20px; }
+        li { margin: 19px; padding: 19px; width: 18px; }
+    </style>
+        <!--Biblioteca multiplataforma de JavaScript-->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+        $( function() {
+          $( "#sortable" ).sortable({
+            revert: true
+          });
+          $( "#draggable" ).draggable({
+            connectToSortable: "#sortable",
+            helper: "clone",
+            revert: "invalid"
+          });
+          $( "ul, li" ).disableSelection();
+        } );
+        </script>
+</head>
+<!--Fichas Drag and Drop-->
+<body>
+      <ul id="sortable">
+        <li class="ui-state-default">1</li>
+        <li class="ui-state-default">2</li>
+        <li class="ui-state-default">3</li>
+        <li class="ui-state-default">4</li>
+        <li class="ui-state-default">5</li>
+        <li class="ui-state-default">6</li>
+        <li class="ui-state-default">7</li>
+        <li class="ui-state-default">8</li>
+        <li class="ui-state-default">9</li>
+        <li class="ui-state-default">10</li>
+        <li class="ui-state-default">11</li>
+        <li class="ui-state-default">12</li>
+        <li class="ui-state-default">13</li>
+        <li class="ui-state-default">14</li>
+        <li class="ui-state-default">15</li>
+        <li class="ui-state-default"></li>
+    </ul>
+    <text>
+        RompeCoco Online | AlanLuna18011658
+    </text>
+</body>
+</html>
